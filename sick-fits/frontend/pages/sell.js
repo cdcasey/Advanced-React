@@ -1,7 +1,3 @@
 export default function SellPage() {
-  return (
-    <div>
-      <p>Hellow</p>
-    </div>
-  );
+  return <p>Hellow sell</p>;
 }

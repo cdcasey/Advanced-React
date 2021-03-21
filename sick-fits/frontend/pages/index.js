@@ -1,7 +1,8 @@
 export default function IndexPage() {
   return (
-    <div>
+    <>
       <p>Hellow</p>
-    </div>
-  )
+      <a href="/sell">mas</a>
+    </>
+  );
 }
