@@ -32,7 +32,7 @@ export const Product = list({
         },
       },
     }),
-    priceInCents: integer(),
+    price: integer(),
     // TODO: photo
   },
 });
