@@ -4,7 +4,7 @@ import { ServerStyleSheet } from 'styled-components';
 export default class MyDocument extends Document {
   // Maybe not needed with the head tag?
   // Wait until method is resolved until data is sent from server to browser
-  // Supposedly flicks CSS filcker; makes random CSS IDs consistent between
+  // Supposedly fixes CSS filcker; makes random CSS IDs consistent between
   // server & browser
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
