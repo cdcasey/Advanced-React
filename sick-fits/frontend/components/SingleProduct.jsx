@@ -29,7 +29,7 @@ export default function SingleProduct({ id }) {
     },
   });
   // const { Product } = data;
-  console.log(data);
+
   if (loading) return <h2>LOADING</h2>;
   if (error) return <DisplayError error={error} />;
   return (

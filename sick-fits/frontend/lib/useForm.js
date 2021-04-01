@@ -5,12 +5,23 @@ export default function useForm(initial = {}) {
   const [inputs, setInputs] = useState(initial);
 
   const initialValues = Object.values(initial).join('');
-  console.log({ initialValues });
+
   // update initial state when it changes
   useEffect(() => {
-    setInputs(initialValues);
+    setInputs(initial);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialValues]);
-  console.log({ inputs });
+
+  // The following two effects *should* result in an infinite loop, but seem not to
+  // useEffect(() => {
+  //   console.log({ initial });
+  //   setInputs(initial);
+  // }, [initial]);
+  // useEffect(() => {
+  //   console.log({ initial });
+  //   setInputs(() => initial);
+  // }, [initial]);
+
   function handleChange(event) {
     let { name, type, value } = event.target;
     if (type === 'number') {

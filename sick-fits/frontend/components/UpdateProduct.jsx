@@ -48,7 +48,6 @@ export default function UpdateProduct({ productId }) {
   });
 
   const { inputs, handleChange, clearForm } = useForm(data?.Product);
-  console.log('DATA', data);
 
   const [
     updateProduct,
